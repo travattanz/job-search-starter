@@ -1,0 +1,45 @@
+{
+  "_doc": "Cheap-mode knobs for job-search-and-apply. Copied to memory/career/config.json during setup. The skill reads this file at the start of every run; edit it any time, no restart needed.",
+
+  "applications_per_run": 2,
+  "_applications_per_run": "How many applications one run produces. 2 fits a $20 Claude plan's 5-hour message window. Raise to 5+ on a larger plan.",
+
+  "stagger_minutes": 75,
+  "_stagger_minutes": "Gap between application sessions. The first starts immediately; each later one is scheduled this many minutes after the previous, so usage spreads across the day instead of draining the window at once. Set 0 to run them all in parallel.",
+
+  "model": "anthropic/claude-sonnet-5",
+  "_model": "Model for both the search session and the application sessions. Sonnet is roughly a fifth the cost of Opus per message and fills forms just as well. Only move to Opus if tailoring quality is visibly suffering.",
+
+  "search_mode": "script",
+  "_search_mode": "\"script\" runs tools/find_jobs.py against job-board APIs and gives the model a ranked shortlist — much cheaper, because the model never reads raw job-board pages. \"model\" lets the agent search the web itself: better at odd or local employers, several times the cost.",
+
+  "candidate_multiplier": 3,
+  "_candidate_multiplier": "Shortlist size = applications_per_run x this. Cutting from a wider pool is what makes the picks good; the script does the widening, so it costs almost nothing.",
+
+  "write_cover_letters": false,
+  "_write_cover_letters": "false = write one only when the form makes it mandatory. Long prose is the most expensive output there is and rarely changes the outcome.",
+
+  "max_free_text_words": 180,
+  "_max_free_text_words": "Ceiling on any single free-text answer unless the form states a longer minimum. Keeps screening answers short and cheap.",
+
+  "search_keywords": [],
+  "_search_keywords": "Words find_jobs.py ranks on. Job titles work best — \"test engineer\", \"controls engineer\". A hit in the posting title scores 5x a hit in the body. Filled from profile.md targets during setup.",
+
+  "search_cities": [],
+  "_search_cities": "Location strings that count as commutable, e.g. [\"Los Angeles\", \"Long Beach\", \"Irvine\"]. Matched against the posting's location text, so list the actual city names rather than a radius.",
+
+  "min_salary": 0,
+  "_min_salary": "Annual floor. Only filters postings that state a number; ones that say nothing still come through, because a silent posting is worth reading. 0 disables it.",
+
+  "remote_ok": true,
+  "_remote_ok": "Whether remote postings get a ranking boost.",
+
+  "target_companies": [],
+  "_target_companies": "Optional. Employers to check every run regardless of keyword match. Their job boards live in tools/boards.json, which is what find_jobs.py actually queries. Workday and Taleo employers have no open API — the agent searches those directly.",
+
+  "auto_submit": true,
+  "_auto_submit": "true = the application session submits once every field is filled and checked. false = it fills everything, stops before the submit button, and flags the session for you to press it. Start with false for the first few if you want to watch it work.",
+
+  "quiet_hours": ["22:00", "07:00"],
+  "_quiet_hours": "No application session is scheduled to start inside this window, local time."
+}

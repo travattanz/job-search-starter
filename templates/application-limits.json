@@ -1,0 +1,32 @@
+{
+  "_doc": "Per-company application caps. `max_per_window` applications per rolling `window_days`. Counts only applications actually submitted (any tracker.json entry with an `applied` date). Add a company the moment a posting, portal, or auto-reply email states a limit, and quote it in `source`. Set `confirmed: false` when the number was inferred rather than read verbatim.",
+  "updated": "{{TODAY}}",
+
+  "default": {
+    "max_per_window": null,
+    "window_days": 30,
+    "note": "No known cap. Soft guidance only — see soft_cap."
+  },
+
+  "soft_cap": {
+    "max_per_window": 8,
+    "window_days": 30,
+    "note": "Self-imposed ceiling for any company with no published limit. Twenty applications to one employer in a week reads as spray-and-pray to a recruiter even where no rule forbids it. Going over is the user's call, never an automatic skip."
+  },
+
+  "aliases": {
+    "_doc": "Lowercased variant -> canonical company name, so 'acme inc' and 'Acme' count against the same cap.",
+    "example inc": "Example",
+    "example incorporated": "Example"
+  },
+
+  "companies": {
+    "_example": {
+      "max_per_window": 10,
+      "window_days": 30,
+      "source": "Recruiting auto-reply YYYY-MM-DD, verbatim: \"...limit of 10 job applications during a 30-day period\".",
+      "confirmed": true,
+      "note": "Delete this example entry once you add a real one. Keys starting with _ are ignored."
+    }
+  }
+}

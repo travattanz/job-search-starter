@@ -1,0 +1,10 @@
+# Nothing personal should ever land in this repo. These are the paths the skill
+# writes at runtime, kept out in case someone runs it from inside a clone.
+__pycache__/
+*.pyc
+.DS_Store
+shortlist.json
+config.json
+memory/
+applications/
+*.pdf

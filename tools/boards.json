@@ -1,0 +1,16 @@
+{
+  "_doc": "Employers whose job boards find_jobs.py queries. Seed this once during setup with target employers, then add to it whenever a new one turns up. `token` is the employer's slug in their careers URL; `ats` is one of greenhouse, lever, ashby, workable, smartrecruiters. Delete the examples.",
+  "_how_to_find_the_token": [
+    "Search: <company name> greenhouse OR lever OR ashby jobs",
+    "boards.greenhouse.io/ACME            -> {\"ats\": \"greenhouse\", \"token\": \"acme\"}",
+    "jobs.lever.co/GLOBEX                 -> {\"ats\": \"lever\", \"token\": \"globex\"}",
+    "jobs.ashbyhq.com/INITECH             -> {\"ats\": \"ashby\", \"token\": \"initech\"}",
+    "apply.workable.com/UMBRELLA          -> {\"ats\": \"workable\", \"token\": \"umbrella\"}",
+    "careers.smartrecruiters.com/STARK    -> {\"ats\": \"smartrecruiters\", \"token\": \"Stark\"} (case-sensitive)",
+    "Workday (myworkdayjobs.com) and Taleo have no open API. Those employers get searched by the agent directly, not here."
+  ],
+  "companies": [
+    { "name": "Example Greenhouse Co", "ats": "greenhouse", "token": "example" },
+    { "name": "Example Lever Co", "ats": "lever", "token": "example" }
+  ]
+}

@@ -1,0 +1,122 @@
+<!doctype html>
+<!-- Base resume. Copied into each application folder and edited there; this file
+     stays generic. Single column, real text, no tables or images, because resume
+     parsers mangle everything else. Print to PDF with tools/resume_pdf.py. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{LEGAL_NAME}} — Resume</title>
+<style>
+  @page { size: letter; margin: 0.5in 0.55in; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Charter", "Georgia", "Times New Roman", serif;
+    font-size: 10.5pt; line-height: 1.34; color: #000; margin: 0;
+  }
+  header { text-align: center; margin-bottom: 11px; }
+  h1 { font-size: 21pt; font-weight: 600; letter-spacing: 0.04em; margin: 0 0 3px; }
+  .contact { font-size: 9.5pt; }
+  .contact a { color: #000; text-decoration: none; }
+  h2 {
+    font-size: 11pt; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.07em; margin: 13px 0 3px;
+    border-bottom: 0.7pt solid #000; padding-bottom: 1.5px;
+  }
+  .row { display: flex; justify-content: space-between; gap: 12px; }
+  .role { font-weight: 700; }
+  .org { font-style: italic; }
+  .meta { font-style: italic; white-space: nowrap; }
+  ul { margin: 2px 0 6px; padding-left: 15px; }
+  li { margin-bottom: 1.5px; }
+  .entry { margin-bottom: 7px; }
+  .skills p { margin: 2px 0; }
+  .skills b { font-weight: 700; }
+  /* Keep an entry from splitting across pages. */
+  .entry, li { page-break-inside: avoid; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>{{LEGAL_NAME}}</h1>
+  <!-- City and state only. Never a street address on a resume. -->
+  <div class="contact">
+    {{CITY_STATE}} &nbsp;•&nbsp; {{PHONE}} &nbsp;•&nbsp;
+    <a href="mailto:{{EMAIL}}">{{EMAIL}}</a> &nbsp;•&nbsp;
+    <a href="{{LINKEDIN}}">{{LINKEDIN_SHORT}}</a>
+  </div>
+</header>
+
+<!-- Optional. Three lines at most, and only if it says something a bullet
+     can't. Cut it before you cut experience. -->
+<h2>Summary</h2>
+<p>{{SUMMARY}}</p>
+
+<h2>Experience</h2>
+
+<div class="entry">
+  <div class="row">
+    <span><span class="role">{{TITLE_1}}</span>, <span class="org">{{EMPLOYER_1}}</span></span>
+    <span class="meta">{{DATES_1}}</span>
+  </div>
+  <div class="meta">{{LOCATION_1}}</div>
+  <ul>
+    <!-- Plain past-tense verb first. A number wherever one honestly exists.
+         Nothing here that isn't ✅ in skills.md. -->
+    <li>{{BULLET_1_1}}</li>
+    <li>{{BULLET_1_2}}</li>
+    <li>{{BULLET_1_3}}</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <div class="row">
+    <span><span class="role">{{TITLE_2}}</span>, <span class="org">{{EMPLOYER_2}}</span></span>
+    <span class="meta">{{DATES_2}}</span>
+  </div>
+  <div class="meta">{{LOCATION_2}}</div>
+  <ul>
+    <li>{{BULLET_2_1}}</li>
+    <li>{{BULLET_2_2}}</li>
+  </ul>
+</div>
+
+<h2>Projects</h2>
+<!-- Delete this whole section if there's nothing real in it. An empty-feeling
+     projects section reads worse than none. -->
+<div class="entry">
+  <div class="row">
+    <span><span class="role">{{PROJECT_1}}</span></span>
+    <span class="meta">{{PROJECT_1_DATES}}</span>
+  </div>
+  <ul>
+    <li>{{PROJECT_1_DETAIL}}</li>
+  </ul>
+</div>
+
+<h2>Education</h2>
+<div class="entry">
+  <div class="row">
+    <span><span class="role">{{DEGREE}}</span>, <span class="org">{{SCHOOL}}</span></span>
+    <span class="meta">{{GRAD_DATE}}</span>
+  </div>
+  <div class="meta">{{SCHOOL_LOCATION}}</div>
+</div>
+
+<h2>Skills</h2>
+<div class="skills">
+  <!-- Group them the way postings in this field group them. Every term here is
+       ✅ in skills.md — no exceptions, no "familiar with". -->
+  <p><b>{{SKILL_GROUP_1}}:</b> {{SKILL_LIST_1}}</p>
+  <p><b>{{SKILL_GROUP_2}}:</b> {{SKILL_LIST_2}}</p>
+  <p><b>{{SKILL_GROUP_3}}:</b> {{SKILL_LIST_3}}</p>
+</div>
+
+<!-- Licenses and certifications: held only. Anything in progress either says so
+     in plain words or stays off entirely.
+<h2>Licenses & Certifications</h2>
+<div class="skills"><p>{{LICENSES_HELD}}</p></div>
+-->
+
+</body>
+</html>
