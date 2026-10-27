@@ -41,7 +41,7 @@ Python 3.9 or newer for the scripts. No packages or API keys are needed. Chrome 
 
 ## Privacy
 
-Personal files live in `Desktop/Career`, outside the cloned repository. Job searches send requests to the public job-board APIs or web search. Passwords never belong in the repository, Career files, or chat; choose an OS or password-manager vault during setup. Codex does not retrieve vault entries unless an approved integration is available; otherwise you sign in manually in the browser. Applications may be submitted automatically when auto-apply is enabled, the job matches your confirmed criteria, a supported browser is available, and all non-attestation answers are known. Codex pauses when a human decision is required.
+Personal files live in `Desktop/Career`, outside the cloned repository. Job searches send requests to the public job-board APIs or web search. Passwords never belong in the repository, Career files, or chat; choose an OS/password-manager vault, a local note for manual sign-in, or no saved credentials during setup. Codex does not retrieve vault entries unless an approved integration is available; if you use a local note, you enter credentials yourself in the browser. Applications may be submitted automatically when auto-apply is enabled, the job matches your confirmed criteria, a supported browser is available, and all non-attestation answers are known. Codex pauses when a human decision is required.
 
 ## For Codex
 

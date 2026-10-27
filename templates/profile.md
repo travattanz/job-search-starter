@@ -62,7 +62,7 @@ Last updated: {{TODAY}}
 
 ## Credential storage and auto-apply
 
-- **Preferred credential store:** {{CREDENTIAL_STORAGE}} (Apple Keychain, Windows Credential Manager, password-manager app, or manual sign-in).
+- **Preferred credential store:** {{CREDENTIAL_STORAGE}} (Apple Keychain, Windows Credential Manager, password-manager app, local note for manual sign-in, or manual sign-in).
 - **Auto-apply:** {{AUTO_APPLY_STATUS}} (from `config.json`; default on after explicit setup confirmation).
 - **Dedicated job chat:** {{JOB_CHAT_STATUS}} (create a separate Codex chat for each application when the thread tool is available).
 - **Reusable application answers:** {{SAVE_REUSABLE_ANSWERS}} (save user-confirmed answers with date and reuse scope; request separate consent for sensitive answers).
