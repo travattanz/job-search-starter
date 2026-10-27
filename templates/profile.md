@@ -8,13 +8,24 @@ Last updated: {{TODAY}}
 
 ## Targets
 
-- **Roles:** {{TARGET_ROLES}}
-- **Salary floor:** {{SALARY_FLOOR}} — a hard filter. Below this, don't apply.
-- **Location:** lives in {{CITY_STATE}}. Commute radius {{COMMUTE_RADIUS}}.
+- **Titles and level:** {{TARGET_ROLES}}
+- **Work to seek:** {{WORK_TO_SEEK}}
+- **Industries / employer types:** {{INDUSTRIES}}
+- **Must-haves:** {{MUST_HAVES}}
+- **Preferences:** {{PREFERENCES}}
+- **Deal-breakers:** {{DEAL_BREAKERS}}
+- **Salary floor:** {{SALARY_FLOOR}} — include currency and pay period. Treat as a hard filter only if the user confirms it is one.
+- **Location:** {{CITY_STATE}}; commute/travel limit {{COMMUTE_RADIUS}}.
 - **Work setup:** {{ONSITE_HYBRID_REMOTE}}
+- **Schedule:** {{SCHEDULE}}
 - **Relocation:** {{RELOCATION}}
+- **Target employers:** {{TARGET_COMPANIES}}
+- **Excluded employers:** {{EXCLUDED_COMPANIES}}
 - **Applications per run:** {{APPS_PER_RUN}} (also in `config.json`)
-- **Do not apply to:** {{EXCLUDED_COMPANIES}}
+
+<!-- Keep must-haves, preferences, and deal-breakers separate. Never promote a
+     preference to a hard filter. If a script cannot check a criterion, Codex
+     reviews the full posting and explains the result in chat. -->
 
 ## Background
 
