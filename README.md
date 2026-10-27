@@ -14,7 +14,7 @@ A local-first job-search workspace. Open this folder in Codex, attach your resum
 
    **Find jobs for me today.**
 
-Codex will search the public job boards you approved, check results against your must-haves and deal-breakers, rank the remaining jobs using your preferences, and show the results in chat.
+Codex will search public postings using your selected search mode, check results against your must-haves and deal-breakers, rank the remaining jobs using your preferences, and show the results in chat. If you choose no specific employers, Codex uses broad public-web search.
 
 ## What setup asks
 
@@ -28,7 +28,7 @@ Setup creates `Desktop/Career` on macOS or Windows and stores your profile, resu
 
 ## What it does
 
-- Searches approved public Greenhouse, Lever, Ashby, Workable, and SmartRecruiters boards.
+- Searches approved public Greenhouse, Lever, Ashby, Workable, and SmartRecruiters boards, or searches public postings broadly on the web when no employers are specified.
 - Applies must-haves and deal-breakers, then ranks by your preferences.
 - Tracks applications and checks per-company caps.
 - Prepares tailored resume and application materials using only confirmed facts.
