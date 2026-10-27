@@ -4,7 +4,7 @@ Applies to every free-text thing written for an application: cover letters, "why
 this job" answers, screening free-text, recruiter and follow-up messages, and any
 resume bullet rewritten for a posting.
 
-**Read `memory/career/voice.md` alongside this file.** That one records how this
+**Read `Career/voice.md` alongside this file.** That one records how this
 specific person writes, taken from their own messages. This one is the general
 method. When the two disagree, their voice wins.
 

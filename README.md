@@ -1,36 +1,35 @@
 # Job Search Starter for Codex
 
-A local-first job-search workspace. Drop the folder into Codex, start one guided conversation, and let Codex set up your private profile and search preferences with you. You do not need to open or edit the project files yourself.
+A local-first job-search workspace. Open this folder in Codex, attach your resume, and answer a short guided setup. You do not need to inspect or edit project files.
 
 ## Start here
 
 1. Download or clone this repository, then open the folder in Codex.
 2. In the chat box, type:
 
-   **Start my 10–15 minute job-search setup. Guide me through it, create my private profile, and show me a summary before the first search.**
+   **Set up my job search. Ask me for my resume first, then guide me through the yes/no setup.**
 
-3. Answer the short interview. Codex will use your resume if you provide one, explain any missing choices, save your private files, and show what it set up.
-4. When you’re ready to search, type:
+3. Drop in your resume when Codex asks. Codex will create a private `Career` folder on your Desktop and use short yes/no, multiple-choice, and factual questions to fill it in.
+4. When setup is complete, type:
 
    **Find jobs for me today.**
 
-Codex will search the public job boards you approved, rank the results against your preferences, and show the matches and any gaps in chat. Setup itself does not contact job boards.
+Codex will search the public job boards you approved, check results against your must-haves and deal-breakers, rank the remaining jobs using your preferences, and show the results in chat.
 
-## What the 10–15 minute setup covers
+## What setup asks
 
-- Target job titles, level, industries, and the kind of work you want
-- Must-haves, preferences, and deal-breakers, such as pay, location, schedule, and work mode
-- Your resume, career facts, and which skills you confirm are current
-- Employers to include or exclude, and how many jobs to review at a time
-- Optional application details; sensitive answers can be skipped and left for later
-- A final review of the search standard Codex will use
+The 10–15 minute interview uses a resume to prefill facts, then confirms them with you. It covers target job titles, location and work mode, pay floor, schedule, must-haves, deal-breakers, optional preferences, and employers to include or exclude. It avoids broad “what’s your dream job?” questions. You can answer **Yes**, **No**, **Skip**, choose from a list, or correct a fact.
 
-You can answer in your own words, skip a question, or say “not sure.” Codex will label unknowns instead of guessing. The setup summary appears in chat, including where private files were saved and the exact prompt for the first search.
+Codex shows a summary in chat when finished, including the Career folder location and the exact prompt for your first search. Sensitive application answers can wait until you need them.
+
+## Your private Career folder
+
+Setup creates `Desktop/Career` on macOS or Windows and stores your profile, resume copy, search settings, application tracker, and job materials there. On Windows it checks common OneDrive Desktop locations too. The setup helper preserves existing files and can be run again safely. If Codex cannot access the Desktop, it will ask you to choose a folder or grant access; it will not save personal information in this repository.
 
 ## What it does
 
 - Searches approved public Greenhouse, Lever, Ashby, Workable, and SmartRecruiters boards.
-- Ranks roles against your target titles, confirmed requirements, location, work mode, pay floor, preferences, and deal-breakers.
+- Applies must-haves and deal-breakers, then ranks by your preferences.
 - Tracks applications and checks per-company caps.
 - Prepares tailored resume and application materials using only confirmed facts.
 - Can render a PDF resume with Chrome or Edge.
@@ -42,10 +41,10 @@ Python 3.9 or newer for the scripts. No packages or API keys are needed. Chrome 
 
 ## Privacy
 
-Personal files are kept in `memory/career/` and excluded from Git. Job searches send requests to the public job-board APIs you selected. Nothing is sent to an employer, and no application is submitted automatically.
+Personal files live in `Desktop/Career`, outside the cloned repository. Job searches send requests to the public job-board APIs you selected. Nothing is sent to an employer, and no application is submitted automatically.
 
 ## For Codex
 
-The guided workflow is defined in `SETUP.md` and `.agents/skills/job-search-and-apply/`. Codex reads these instructions for you; they are not a checklist you need to open. The project skill works while this folder is open in Codex and does not install anything globally.
+The conversational workflow is defined in `SETUP.md` and `.agents/skills/job-search-and-apply/`. Codex reads these instructions for you; they are not a checklist you need to open. The project skill works while this folder is open in Codex and does not install anything globally.
 
 MIT License.

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Per-company application-cap check.
 
-Reads memory/career/application-limits.json and applications/tracker.json and
+Reads Career/application-limits.json and applications/tracker.json and
 reports, per company, how many applications went out inside the rolling window
 and how many slots are left.
 

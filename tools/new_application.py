@@ -10,7 +10,7 @@ Usage:
       [--salary "$95,000-$120,000"] [--location "Long Beach, CA"] \\
       [--posting-file raw.txt]
 
-Creates memory/career/applications/<company>-<role-slug>/ with posting.md,
+Creates Career/applications/<company>-<role-slug>/ with posting.md,
 notes.md and a copy of the base resume.html, then appends a `prepared` entry to
 tracker.json. Re-running for the same folder updates posting.md and leaves
 notes.md alone, so nothing you wrote by hand is lost.

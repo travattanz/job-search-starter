@@ -118,7 +118,7 @@ day, so the next application autofills.
 
 ## Resume rules
 
-- Base resume: `memory/career/resume.html`; PDF via
+- Base resume: `Career/resume.html`; PDF via
   `tools/resume_pdf.py`, regenerated right before every application.
 - PDF filename: `{{LEGAL_NAME}} - Resume.pdf`
 - City and state only, no street address.

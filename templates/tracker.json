@@ -1,5 +1,5 @@
 {
-  "_doc": "One entry per folder in memory/career/applications/. Statuses: prepared, submitted, screening, assessment, interview, offer, rejected, closed, on_hold, withdrawn. `applied` is the submission date (YYYY-MM-DD) and is what application caps count — leave it null until the submission is actually confirmed.",
+  "_doc": "One entry per folder in Career/applications/. Statuses: prepared, submitted, screening, assessment, interview, offer, rejected, closed, on_hold, withdrawn. `applied` is the submission date (YYYY-MM-DD) and is what application caps count — leave it null until the submission is actually confirmed.",
   "updated": "{{TODAY}}",
   "applications": []
 }
