@@ -15,8 +15,7 @@ notes.md and a copy of the base resume.html, then appends a `prepared` entry to
 tracker.json. Re-running for the same folder updates posting.md and leaves
 notes.md alone, so nothing you wrote by hand is lost.
 
-Prints the absolute folder path on the last line — the agent puts that straight
-into the application session's brief.
+Prints the absolute folder path on the last line for the assistant's review packet.
 """
 
 import argparse
