@@ -9,5 +9,8 @@
   "min_salary": 0,
   "remote_ok": true,
   "target_companies": [],
-  "auto_submit": false
+  "auto_submit": true,
+  "credential_storage": "ask_during_setup",
+  "save_reusable_answers": true,
+  "job_chat_per_application": true
 }

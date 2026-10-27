@@ -1,5 +1,3 @@
-# Browser access unavailable
+Codex does not guarantee a connected browser in every session. If no supported browser capability is available, do not invent commands or switch to shell automation, inspect browser profiles, or extract cookies/credentials. Save the application as `prepared`, provide the employer link and field-by-field answer sheet in the dedicated job chat, and tell the user automatic submission is waiting for browser access.
 
-Codex does not guarantee a connected browser or a browser CLI. If this session has no working browser tool, do not invent commands or try to bypass that limitation. Prepare the tailored resume and a field-by-field answer sheet from confirmed facts, then give the user the employer's application link. The user can fill, review, and submit it themselves.
-
-If a browser tool errors, stop browser interaction. Do not retry with unrelated local executables, inspect browser profiles, or attempt to extract cookies or credentials. Report the limitation plainly and continue with offline preparation.
+If a browser tool errors, stop browser interaction. Do not retry with unrelated local executables or attempt to evade the site's login, CAPTCHA, MFA, or other access controls. The user can restore access or sign in manually; resume only after they confirm the browser is ready.

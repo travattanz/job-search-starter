@@ -20,7 +20,7 @@ Codex will search public postings using your selected search mode, check results
 
 The 10–15 minute interview uses a resume to prefill facts, then confirms them with you. It covers target job titles, location and work mode, pay floor, schedule, must-haves, deal-breakers, optional preferences, and employers to include or exclude. It avoids broad “what’s your dream job?” questions. You can answer **Yes**, **No**, **Skip**, choose from a list, or correct a fact.
 
-Codex shows a summary in chat when finished, including the Career folder location and the exact prompt for your first search. Sensitive application answers can wait until you need them.
+Codex shows a summary in chat when finished, including the Career folder location and the exact prompt for your first search. Setup asks where you want login credentials kept and whether you want to keep auto-apply enabled.
 
 ## Your private Career folder
 
@@ -32,8 +32,8 @@ Setup creates `Desktop/Career` on macOS or Windows and stores your profile, resu
 - Applies must-haves and deal-breakers, then ranks by your preferences.
 - Tracks applications and checks per-company caps.
 - Prepares tailored resume and application materials using only confirmed facts.
+- Auto-apply is enabled by default after setup. Codex creates a dedicated chat for each application, saves approved reusable answers, and pauses for missing answers, login, multi-factor checks, CAPTCHA, or legal attestations.
 - Can render a PDF resume with Chrome or Edge.
-- Stops before sign-in, legal attestations, or final submission; you review and submit.
 
 ## Requirements
 
@@ -41,7 +41,7 @@ Python 3.9 or newer for the scripts. No packages or API keys are needed. Chrome 
 
 ## Privacy
 
-Personal files live in `Desktop/Career`, outside the cloned repository. Job searches send requests to the public job-board APIs you selected. Nothing is sent to an employer, and no application is submitted automatically.
+Personal files live in `Desktop/Career`, outside the cloned repository. Job searches send requests to the public job-board APIs or web search. Passwords never belong in the repository, Career files, or chat; choose an OS or password-manager vault during setup. Codex does not retrieve vault entries unless an approved integration is available; otherwise you sign in manually in the browser. Applications may be submitted automatically when auto-apply is enabled, the job matches your confirmed criteria, a supported browser is available, and all non-attestation answers are known. Codex pauses when a human decision is required.
 
 ## For Codex
 

@@ -1,10 +1,10 @@
 # Efficient runs
 
-The default config limits each run to two applications and uses scripts for public job-board discovery. This reduces unnecessary page reading and keeps the user in control.
+The default config allows up to two automatic submissions per run and uses scripts for public job-board discovery when configured. Web searches must use the same configured limit. Each submission gets its own dedicated Codex chat.
 
 - Run `find_jobs.py` before broad web research when script mode is enabled.
 - Read the shortlist rather than opening every board result. Fetch full postings only for selected roles.
 - Check the tracker and company caps before creating application folders.
 - Batch questions about unknown skills and form answers.
 - Write cover letters only when requested or required.
-- Never trade accuracy, privacy, or user review for speed.
+- Never trade accuracy, privacy, or required user decisions for speed. Auto-apply pauses for unknown answers, required attestations, login challenges, or access restrictions.

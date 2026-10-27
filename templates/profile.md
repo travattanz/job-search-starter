@@ -60,41 +60,28 @@ Last updated: {{TODAY}}
 - **LinkedIn:** {{LINKEDIN}}
 - **Portfolio / GitHub:** {{PORTFOLIO}}
 
-## Job-site sign-in
+## Credential storage and auto-apply
 
-{{SIGNIN_POLICY}}
+- **Preferred credential store:** {{CREDENTIAL_STORAGE}} (Apple Keychain, Windows Credential Manager, password-manager app, or manual sign-in).
+- **Auto-apply:** {{AUTO_APPLY_STATUS}} (from `config.json`; default on after explicit setup confirmation).
+- **Dedicated job chat:** {{JOB_CHAT_STATUS}} (create a separate Codex chat for each application when the thread tool is available).
+- **Reusable application answers:** {{SAVE_REUSABLE_ANSWERS}} (save user-confirmed answers with date and reuse scope; request separate consent for sensitive answers).
 
-<!-- One of:
-  A) "Create accounts as needed with the job-hunt email above and the password
-     at <where it lives>. Read it when needed; never write it into notes, a
-     file, or chat."
-  B) "Never sign in. Stop at every login wall, leave the browser open on the
-     sign-in page, and say which page is waiting."
-  Either way: 2FA, CAPTCHA and Google-only logins always stop for the human. -->
+Never put passwords, access tokens, recovery codes, or cookies in this profile, chat, or an application folder. If the selected password manager cannot be accessed through an approved integration, ask the user to sign in manually.
 
 ## Standard application answers
 
-Reuse these verbatim. Every new answer a form asks for gets added here the same
-day, so the next application autofills.
+Reuse these only when the question and context match. Record the user's exact
+confirmed answer, confirmation date, and whether it is general or employer-
+specific. Sensitive answers require explicit permission to store. Do not ask
+again for a current reusable answer unless the user changes it or the context
+differs.
 
-| Question | Answer |
-| --- | --- |
-| Authorized to work in {{COUNTRY}}? | {{WORK_AUTH}} |
-| Need visa sponsorship, now or in future? | {{SPONSORSHIP}} |
-| Citizen of {{COUNTRY}}? | {{CITIZENSHIP}} |
-| Security clearance? | {{CLEARANCE}} |
-| Earliest start date | {{START_DATE}} |
-| Notice required | {{NOTICE}} |
-| Willing to travel | {{TRAVEL}} |
-| Willing to relocate | {{RELOCATION}} |
-| Desired salary | {{DESIRED_SALARY}} |
-| Currently employed | {{CURRENTLY_EMPLOYED}} |
-| May we contact current employer | {{CONTACT_CURRENT_EMPLOYER}} |
-| How did you hear about us | {{SOURCE_ANSWER}} |
-| Previously applied here / worked here | {{PRIOR_RELATIONSHIP}} |
-| Convicted of a felony | {{FELONY}} |
-| Drug screen / background check consent | {{SCREENING_CONSENT}} |
-| Referral name | {{REFERRAL}} |
+| Question | Confirmed answer | Confirmed on | Reuse scope |
+| --- | --- | --- | --- |
+
+No reusable answers yet. Add a row only after the user confirms the answer; ask
+before storing sensitive answers.
 
 ### Voluntary EEO questions
 

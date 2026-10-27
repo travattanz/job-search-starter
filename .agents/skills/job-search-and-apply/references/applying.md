@@ -1,13 +1,11 @@
-# Preparing an application
+# Preparing and submitting an application
 
-Use this checklist for one role at a time. The user remains responsible for account access, legal attestations, and the final submission.
+1. Read the full posting, `Career/profile.md`, `Career/skills.md`, `Career/voice.md`, and the role's `notes.md`.
+2. Check the role against must-haves, preferences, deal-breakers, and application caps. Do not proceed with a deal-breaker or hard-cap violation.
+3. Use the dedicated `Application — <Employer> — <Role>` chat created for this application. Keep passwords, tokens, cookies, and secret-manager contents out of the chat prompt.
+4. Tailor only the role-folder copy of `resume.html`. Every claim must be supported by the confirmed profile and ✅ skills ledger. Record matches, gaps, and the full posting in the role folder.
+5. Draft form answers from confirmed facts and reusable answers in the private profile. Never guess. Pause in the dedicated chat for unknown answers, sensitive questions without explicit permission, legal certifications/attestations, consent, MFA, CAPTCHA, or site restrictions.
+6. If auto-apply is enabled and the user explicitly confirmed it, submit only after all ordinary answers are confirmed, the role meets the user's criteria, and the site is accessible through a supported browser. Do not agree to legal attestations or certifications for the user. Do not create accounts or send recruiter messages.
+7. After the site confirms submission, update the tracker to `submitted`, store the date and confirmation evidence, and tell the user in chat. If blocked, record `prepared` and explain what remains.
 
-1. Read the full posting, profile, skills ledger, voice guide, and role `notes.md`.
-2. Check company limits with `check_limits.py`. Exclude a company if a confirmed hard cap is full; explain the reason and next eligible date if known.
-3. Tailor only the role-specific resume copy. Do not add unconfirmed claims. Include a short list of relevant matches and gaps in `notes.md`.
-4. Regenerate the PDF immediately before handing it back. Verify it is newer than the HTML and visually review when possible.
-5. Draft answers to the form's questions using confirmed data. For sensitive, demographic, authorization, sponsorship, criminal-history, or legal questions, use the exact saved preference or ask the user. Never guess.
-6. Provide a review packet: role and posting URL, tailored resume/PDF, proposed answers, unresolved questions, and the explicit next step for the user.
-7. Set tracker status to `prepared`. Change it to `submitted` only after the user reports submitting. Record the date and outcome only when confirmed.
-
-Do not sign in, accept a certification, click a final submit button, or send a recruiter message. If the user is filling the form alongside you, help them understand each field and pause for their decision on sensitive answers.
+When `save_reusable_answers` is enabled, save the exact user-approved non-sensitive wording, date, and scope in the private profile without asking again. Ask before saving sensitive information. Reuse an answer only when the question and context match; re-ask if it is stale, changed, or employer-specific.

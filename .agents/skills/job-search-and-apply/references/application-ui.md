@@ -1,7 +1,11 @@
-# Application form assistance in Codex
+# Application site interaction
 
-Codex may not have a browser connected in every session. First check the tools available in the current session. Do not assume a browser or use desktop control as a fallback unless the user requested computer interaction and the computer-use skill's instructions have been followed.
+Codex may not have a browser connected in every session. Check for an available browser capability before interacting with a site. Do not assume a browser, shell automation, or access to the user's saved-password store.
 
-If a browser capability is available and the user asks for form-filling help, use it only to inspect public pages or help fill non-sensitive draft fields. Never bypass sign-in, MFA, CAPTCHA, paywalls, or site restrictions. Never submit the application or agree to an attestation.
+Use only public pages and normal site flows. Do not bypass CAPTCHA, MFA, rate limits, login walls, or other access restrictions. Never inspect browser profiles, cookies, or password databases.
 
-Before any data is entered, show the user what information will be used. For legal, demographic, authorization, sponsorship, criminal-history, or disability questions, use only a saved explicit answer or ask. Do not infer. Avoid uploading documents without the user's direct instruction. Before handing off, summarize what is filled, what remains, and the location of the submit control without activating it.
+Use an authenticated browser session or the user's selected password-manager integration only. Never ask the user to paste a password or token into chat, and never save it in `Career/`, an application folder, logs, or the repository. If login is needed and no approved secure method is available, ask the user to sign in manually in the browser and resume after they confirm.
+
+If auto-submit is enabled and the user explicitly confirmed it, ordinary form fields may be completed with confirmed profile facts and reusable answers. Pause in the dedicated job chat when a question is unknown, ambiguous, sensitive without storage consent, or asks for an attestation, certification, or consent. Never click an attestation or make a legal representation for the user.
+
+Before submitting, recheck the employer, role, job link, role criteria, all answers, and application caps. Submit only when the user authorized auto-apply and the form contains no unresolved field or human-only checkpoint. Record submission only after the employer site confirms it.
